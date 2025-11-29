@@ -5,7 +5,6 @@ import sqlite3
 DB_FILE = 'students.db'
 
 def get_connection():
-    """Get database connection"""
     conn = sqlite3.connect(DB_FILE)
     conn.row_factory = sqlite3.Row
     return conn
@@ -20,7 +19,8 @@ def init_database():
                  course TEXT,
                  year TEXT,
                  created_at TEXT,
-                 updated_at TEXT)
+                 updated_at TEXT
+                 )
                  """)
     conn.commit()
     conn.close()
