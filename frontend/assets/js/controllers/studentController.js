@@ -3,7 +3,7 @@ import {
     apiGetOne, 
     apiCreate, 
     apiUpdate, 
-    // apiDelete 
+    apiDelete 
 } from "../services/studentService.js";
 
 import { showAlert } from "../components/Alert.js";
